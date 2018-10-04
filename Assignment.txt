@@ -1,0 +1,131 @@
+Assignment-
+Basic Programming and Control Flow in JAVA
+
+
+
+1) public class AddTwoNumbers {
+
+   public static void main(String[] args) {
+        
+      int num1 = 5, num2 = 15, sum;
+      sum = num1 + num2;
+
+      System.out.println("Sum of these numbers: "+sum);
+   }
+}
+
+*****************************************************************************8
+2) public class Leap {
+ 
+	public static void main(String[] args) {
+		
+		
+		int year = 2004;
+		
+		if((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
+			System.out.println("Year " + year + " is a leap year");
+		else
+			System.out.println("Year " + year + " is not a leap year");
+	}
+}
+********************************************************************************
+3) public class Pattern {
+ 
+    public static void main(String[] args) {
+        for (int i = 1; i <= 8; i++) {
+            for (int j = 1; j <= row; j++) {
+                System.out.print("*");
+            }
+ 
+            System.out.println();
+        }
+    }
+ 
+}
+**********************************************************************************
+4)
+import java.util.Scanner;
+ 
+class LargestOfThreeNumbers
+{
+   public static void main(String args[])
+   {
+      int x, y, z;
+      System.out.println("Enter three integers ");
+      Scanner in = new Scanner(System.in);
+ 
+      x = in.nextInt();
+      y = in.nextInt();
+      z = in.nextInt();
+ 
+      if ( x > y && x > z )
+         System.out.println("First number is largest.");
+      else if ( y > x && y > z )
+         System.out.println("Second number is largest.");
+      else if ( z > x && z > y )
+         System.out.println("Third number is largest.");
+      else   
+         System.out.println("Entered numbers are same.");
+   }
+}
+********************************************************************************************
+5)
+    class Palindrone{  
+     public static void main(String args[]){  
+      int r,sum=0,temp;    
+      int n=121  
+      
+      temp=n;    
+      while(n>0){    
+       r=n%10;  
+       sum=(sum*10)+r;    
+       n=n/10;    
+      }    
+      if(temp==sum)    
+       System.out.println("palindrome number ");    
+      else    
+       System.out.println("not palindrome");    
+    }  
+    } 
+******************************************************************************************
+
+6)
+public class PrimeExample{    
+ public static void main(String args[]){    
+  int i,m=0,flag=0;      
+  int n=3;//it is the number to be checked    
+  m=n/2;      
+  if(n==0||n==1){  
+   System.out.println(n+" is not prime number");      
+  }else{  
+   for(i=2;i<=m;i++){      
+    if(n%i==0){      
+     System.out.println(n+" is not prime number");      
+     flag=1;      
+     break;      
+    }      
+   }      
+   if(flag==0)  { System.out.println(n+" is prime number"); }  
+  }//end of else  
+}    
+}
+
+
+********************************************************************************************
+7)
+public class Reverse
+{
+
+    public static void main(String[] args) {
+
+        int num = 1234, reversed = 0;
+
+        while(num != 0) {
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num /= 10;
+        }
+
+        System.out.println("Reversed Number: " + reversed);
+    }
+}
